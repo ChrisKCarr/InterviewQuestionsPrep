@@ -22,3 +22,28 @@
 // for (int i = 0; i < len; i++) {
 //     print(nums[i]);
 // }
+
+function RemoveDuplicateFromSortedArray(Arr) {
+  let currentInt;
+  let uniqueEle;
+  let sumLength = 0;
+  const array = Arr;
+  for (let i = 0; i < Arr.length; i++) {
+    currentInt = Arr[i];
+    if (currentInt !== uniqueEle) {
+      uniqueEle = Arr[i];
+      sumLength++;
+    }
+    // else {
+    //   let index = array.indexOf(Arr[i]);
+    //   if (index > -1) {
+    //     array.splice(index, 1);
+    //   }
+    // }
+  }
+
+  return sumLength;
+}
+
+console.log(RemoveDuplicateFromSortedArray([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
+console.log(RemoveDuplicateFromSortedArray([1, 1, 2]));

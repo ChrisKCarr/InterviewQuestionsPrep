@@ -6,20 +6,20 @@ insertion sort - fast on small sorts, easy to code, space complexity of O(1)
 radix or counting sort - since numbers will usually fall between a certain range.
 
 //#3 - Sport scores on ESPN
-Quick sort
+Quick sort - could be better for space complexity, 
 
 //#4 - Massive database (can't fit all into memory) needs to sort through past year's user data
-Merge Sort
+Merge Sort - time complexity would be an issue with a large database, best to pick a sorting method which is consistent. 
 
 //#5 - Almost sorted Udemy review data needs to update and add 2 new reviews
-Insertion Sort
+Insertion Sort - assumes most the data in the example is already sorted. 
 
 //#6 - Temperature Records for the past 50 years in Canada
-radix or counting Sort
+radix or counting Sort - radix is good if there are no decimal places, 
 Quick sort if decimal places
 
 //#7 - Large user name database needs to be sorted. Data is very random.
-Quick sort
+Quick sort - if data set isnt that large.
 
 //#8 - You want to teach sorting
-Bubble sort
+Bubble sort, Selection Sort

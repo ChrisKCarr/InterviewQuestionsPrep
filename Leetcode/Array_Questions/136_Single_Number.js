@@ -15,6 +15,17 @@
 // Input: nums = [1]
 // Output: 1
 
-const singleNumber = function (nums) {};
+const singleNumber = function (nums) {
+  let hash = {};
+  nums.forEach((num) => {
+    hash[num] = hash[num] + 1 || 1;
+  });
+  console.log(hash);
+  for (const key in hash) {
+    if (hash[key] === 1) {
+      return key;
+    }
+  }
+};
 
 console.log(singleNumber([2, 2, 1]));
